@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html{
+            margin-bottom: 0;
+        }
+        body {
+            margin: 25px;
+            padding: 0;
+            height: 100vh;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 160px;
+            margin-bottom: 50px;
+        }
+        .content{
+            position: absolute;
+            top: 200px;
+            width: 650px;
+            border: 1px solid black;
+            height: 750px;
+        }
+        #logo {
+            position: absolute;
+            left: 10px;
+            top: 0;
+            width: 150px;
+        }
+        .title-header-0{
+            position: absolute;
+            top: 45px;
+            font-weight: bold;
+            text-transform: uppercase;
+            left: 260px;
+        }
+        .title-header-1{
+            position: absolute;
+            top: 80px;
+            font-weight: bold;
+            text-transform: uppercase;
+            left: 190px;
+        }
+        .title-header-2{
+            position: absolute;
+            top: 150px;
+            font-weight: bold;
+            text-transform: uppercase;
+            left: 240px;
+        }
+        .info{
+            bottom: 0;
+            margin-bottom: 20px;
+            font-size: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: absolute;
+        }
+        .info span{
+            font-size: 9px;
+            font-weight: 0;
+            text-transform: none;
+        }
+        .emissao{
+            left: 10px;
+        }
+        .identificador{
+            left: 140px;
+            
+        }
+        .versao {
+            right: 10px;
+        }
+        .informacoes-gerais{
+            text-align: center;
+            padding: 5px;
+        }
+        .content-title{
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 1px solid black;
+        }
+        .dados{
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 15px;
+            position: relative;
+            height: 120px;
+        }
+        .row{
+            width: 100%;
+            position: relative;
+        }
+        .row div{
+            position: absolute;
+            font-weight: bold;
+        }
+        .value{
+            font-weight: 0;
+        }
+        .nome {
+            width: 50%;
+        }
+        .cpf{
+            width: 28%;
+            left: 50%;
+        }
+        .rg{
+            width: 22%;
+            left: 78%;
+        }
+        .nascimento{
+            top: 30px;
+            width: 50%;
+        }
+        .telefone{
+            top: 30px;
+            width: 50%;
+            left: 50%;
+        }
+        .matricula1{
+            top: 60px;
+            width: 30%;
+        }
+        .ch1{
+            top: 60px;
+            left: 30%;
+            width: 15%;
+        }
+        .cargo1{
+            top: 60px;
+            left: 45%;
+            width: 28%;
+        }
+        .funcao1{
+            top: 60px;
+            left: 73%;
+            width: 27%;
+        }
+        .matricula2{
+            top: 90px;
+            width: 30%;
+        }
+        .ch2{
+            top: 90px;
+            left: 30%;
+            width: 15%;
+        }
+        .cargo2{
+            top: 90px;
+            left: 45%;
+            width: 28%;
+        }
+        .funcao2{
+            top: 90px;
+            left: 73%;
+            width: 27%;
+        }
+        .informacoes-titulo{
+            border-top: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        .informacoes-matricula1{
+            padding: 10px 15px;
+            position: relative;
+            height: 20px;
+        }
+        .informacoes-matricula1 div{
+            position: absolute;
+        }
+        .informacoes-matricula2 div{
+            position: absolute;
+        }
+        .informacoes-matricula2{
+            padding: 10px 15px;
+            position: relative;
+            height: 20px;
+            border-top: 1px black solid;
+        }
+        .dados1{
+            height: 235px;
+            position: relative;
+        }
+        .dados2{
+            position: relative;
+            height: 235px;
+        }
+        .e-matricula1{
+            width: 30%;
+        }
+        .e-gee1{
+            left: 30%;
+            width: 12%;
+        }
+        .e-disciplina1{
+            left: 41%;
+        }
+        .e-matricula2{
+            width: 30%;
+        }
+        .e-gee2{
+            left: 30%;
+            width: 12%;
+        }
+        .e-disciplina2{
+            left: 41%;
+        }
+        /* .dados1-row1{
+            height: 58.75px;
+            border-bottom: 1px solid black;
+        }
+        .dados1-row2{
+            height: 58.75px;
+            border-bottom: 1px solid black;
+        }
+        .dados1-row3{
+            height: 58.75px;
+            border-bottom: 1px solid black;
+        }
+        .dados1-row4{
+            height: 58.75px;
+        }
+        .dados2-row1{
+            height: 58.75px;
+            border-bottom: 1px solid black;
+        }
+        .dados2-row2{
+            height: 58.75px;
+            border-bottom: 1px solid black;
+        }
+        .dados2-row3{
+            height: 58.75px;
+            border-bottom: 1px solid black;
+        }
+        .dados2-row4{
+            height: 58.75px;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://bienaldealagoas.com.br/wp-content/themes/bienaldealagoas/image/logos/governo-de-alagoas.png" alt="logo">
+        <div class="title-header-0">ESTADO DE ALAGOAS</div>
+        <div class="title-header-1">SECRETARIA DO ESTADO DA EDUCAÇÃO</div>
+        <div class="title-header-2">RELATÓRIO DE LOTAÇÃO</div>
+    </header>
+    <div class="content">
+        <div class="informacoes-gerais content-title">
+            Informações Gerais
+        </div>
+        <div class="dados">
+            <div class="row">
+                <div class="nome">
+                    NOME : <span class="value">José Fabiano Silva de Andrade</span>
+                </div>
+                <div class="cpf">
+                    CPF: <span class="value">119.716.034-57</span>
+                </div>
+                <div class="rg">
+                    RG : <span class="value">123456</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="nascimento">
+                    DATA DE NASCIMENTO : <span class="value">11/04/1999</span>
+                </div>
+                <div class="telefone">
+                    TELEFONE : <span class="value">(82) 9 8840-4039</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="matricula1">
+                    MATRÍCULA : <span class="value">123456</span>
+                </div>
+                <div class="ch1">
+                    CH : <span class="value">30</span>
+                </div>
+                <div class="cargo1">
+                    CARGO : <span class="value">Efetivo</span>
+                </div>
+                <div class="funcao1">
+                    FUNÇÃO : <span class="value">Professor</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="matricula2">
+                    MATRÍCULA : <span class="value">147852</span>
+                </div>
+                <div class="ch2">
+                    CH : <span class="value">40</span>
+                </div>
+                <div class="cargo2">
+                    CARGO : <span class="value">Comissionado</span>
+                </div>
+                <div class="funcao2">
+                    FUNÇÃO : <span class="value">Professor</span>
+                </div>
+            </div>
+        </div>
+        <div class="informacoes-titulo content-title">
+            INFORMAÇÕES DAS MATRÍCULAS
+        </div>
+        <div class="informacoes-matricula1 content-title">
+            <div class="e-matricula1">
+                MATRÍCULA : <span class="value">123456</span> 
+            </div>
+            <div class="e-gee1">
+                GEE : <span class="value">13</span>
+            </div>
+            <div class="e-disciplina1">
+                DISCIPLINA (CONCURSO) :  <span class="value">Português</span>
+            </div>
+        </div>
+        <div class="dados1">
+            <div class="dados1-row1">
+                <div class="escola1">
+                    
+                </div>
+            </div>
+            <div class="dados1-row2">
+
+            </div>
+            <div class="dados1-row3">
+
+            </div>
+            <div class="dados1-row4">
+
+            </div>
+        </div>
+        <div class="informacoes-matricula2 content-title">
+            <div class="e-matricula2">
+                MATRÍCULA : <span class="value">147852</span> 
+            </div>
+            <div class="e-gee2">
+                GEE : <span class="value">1</span>
+            </div>
+            <div class="e-disciplina2">
+                DISCIPLINA (CONCURSO) :  <span class="value">Português</span>
+            </div>
+        </div>
+        <div class="dados2">
+            <div class="dados2-row1">
+            
+            </div>
+            <div class="dados2-row2">
+
+            </div>
+            <div class="dados2-row3">
+
+            </div>
+            <div class="dados2-row4">
+
+            </div>
+        </div>
+    </div>
+    <footer>Av. Fernandes Lima, s/n - Farol, Maceió - AL, 57055-055</footer>
+    <div class="emissao info">DATA DE EMISSÃO : <span>dd/mm/yy</span></div>
+    <div class="identificador info">IDENTIFICADOR : <span>ljashfljaghsljfgasjlfgasljfgajlsgflasgflsa</span></div>
+    <div class="versao info">versão : <span>xx</span></div>
+</body>
+</html>
